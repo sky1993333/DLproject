@@ -45,7 +45,7 @@ def svmClassify(x,y,z):
         print testLabel.astype(int)
         #get the cross validation accuracy rate
         scores.append(clf.score(x[test],y[test]))
-    np.savetxt("/Users/sky/github/DLproject1/project1_20404460.csv", testLabel.astype(int),fmt='%10.5f',delimiter=",")
+    np.savetxt("project1_20404460.csv", testLabel.astype(int),fmt='%10.5f',delimiter=",")
     print np.mean(scores)
 
 
